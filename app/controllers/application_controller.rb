@@ -4,7 +4,7 @@ class ApplicationController < Sinatra::Base
   # get all clothes
   get "/clothes" do
     clothings = Clothing.all
-    clothing.to_json
+    clothings.to_json
   end
 
   # get one single piece of clothing
