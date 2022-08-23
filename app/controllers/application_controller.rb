@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
   # get one single piece of clothing
   get "/clothes/:id" do
     clothing = Clothing.find(params[:id])
-    clothing.to_json
+    clothing.to_json(include: [:reviews, :users])
   end
 
   # delete review
