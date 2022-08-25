@@ -39,8 +39,3 @@ class ApplicationController < Sinatra::Base
     review.to_json
   end
 end
-
-# get "/clothes/:id" do
-#   clothing = Clothing.find(params[:id])
-#   clothing.to_json(include: { reviews: { include: :user } })
-# end
