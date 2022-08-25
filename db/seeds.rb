@@ -24,11 +24,11 @@ clothing_21 = Clothing.create(title: "THE PINK ÉVIDEMMENT TANK TOP", price: 150
 puts "Done Seeding Clothing"
 
 puts "Seeding Users!!"
-user_1 = User.create(name: "Benny The Butcher", comment: "I've been selling dreams to sleepers.")
-user_2 = User.create(name: "Avril Lavigne", comment: "He was a skater boi.")
-user_3 = User.create(name: "Selena", comment: "Cada vez cada vez")
-user_4 = User.create(name: "New Edition", comment: "Cool it NOWWWWWWWWW, SLOWWWW it down.")
-user_5 = User.create(name: "Hammerbaby9", comment: "*snaps* My man.")
+user_1 = User.create(name: "Benny The Butcher")
+user_2 = User.create(name: "Avril Lavigne")
+user_3 = User.create(name: "Selena")
+user_4 = User.create(name: "New Edition")
+user_5 = User.create(name: "Hammerbaby9")
 
 puts "Done Seeding Users!!!!!!"
 
