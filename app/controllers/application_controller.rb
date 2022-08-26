@@ -27,7 +27,7 @@ class ApplicationController < Sinatra::Base
       user_id: params[:user_id],
       clothing_id: params[:clothing_id],
     )
-    review.to_json
+    review.to_json(include: :user )
   end
 
   #patch review
@@ -36,6 +36,6 @@ class ApplicationController < Sinatra::Base
     review.update(
       comment: params[:comment],
     )
-    review.to_json
+    review.to_json(include: :user)
   end
 end
